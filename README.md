@@ -46,8 +46,8 @@
 ## Уровень 2. Планирование изменений
 
 /frontend
-    /microfrontend
-        /host-microfrontend
+    /microfrontend                        
+        /host-microfrontend                 // Хостовый микрофронтенд
             /src
                 /components
                     /App.js                 // Корневой компонент приложения
@@ -66,7 +66,7 @@
                     /api.js                 // Обертка для запросов к API
                     /auth.js                // Функции для работы с аутентификацией
                 index.js                    // Точка входа
-        /auth-microfrontend
+        /auth-microfrontend                 // Микрофронтенд для управлением аутентификацией
             /src
                 /components
                     /Login.js               // Компонент для аутентификации
@@ -79,7 +79,7 @@
                     /api.js                 // Обертка для запросов к API
                     /auth.js                // Функции для работы с аутентификацией
                 index.js                    // Точка входа
-        /profile-microfrontend
+        /profile-microfrontend              // Микрофронтенд для управлением профилем
             /src
                 /components
                     /EditAvaterPopup.js     // Компонент для редактирования аватара
@@ -91,7 +91,7 @@
                     /api.js                 // Обертка для запросов к API
                     /auth.js                // Функции для работы с аутентификацией
                 index.js                    // Точка входа
-        /cards-microfrontend
+        /cards-microfrontend                // Микрофронтенд для управлением изображениями
             /src
                 /components
                     /Card.js                // Компонент изображения
@@ -105,4 +105,3 @@
                     /api.js                 // Обертка для запросов к API
                     /auth.js                // Функции для работы с аутентификацией
                 index.js                    // Точка входа
-
