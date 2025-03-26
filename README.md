@@ -45,7 +45,64 @@
 
 ## Уровень 2. Планирование изменений
 
-- main
-    - auth-microfrontend
-    - profile-microfrontend
-    - cards-microfrontend
+/frontend
+    /microfrontend
+        /host-microfrontend
+            /src
+                /components
+                    /App.js                 // Корневой компонент приложения
+                    /Footer.js              // Компонент футер
+                    /Header.js              // Компонент хедер
+                    /Main.js                // Компонент для контента страницы
+                    /ProtectedRoute.js      // Проверка статуса аутентификации
+                /styles
+                    /content.css            // Стили для страницы
+                    /footer.css             // Стили для компонента footer
+                    /header.css             // Стили для компонента header
+                    /page.css               // Стили для компонента main.js
+                    /places.css             // Стили для компонента main.js
+                    /profile.css            // Стили для компонента main.js
+                /utils
+                    /api.js                 // Обертка для запросов к API
+                    /auth.js                // Функции для работы с аутентификацией
+                index.js                    // Точка входа
+        /auth-microfrontend
+            /src
+                /components
+                    /Login.js               // Компонент для аутентификации
+                    /Register.js            // Компонент для регистрации
+                    /InfoTooltip.js         // Компонент для обработки попытки регистрации
+                /styles
+                    /auth-form.css          // Стили для компонента формы аутентификации
+                    /login.css              // Стили для компонента формы регистрации
+                /utils
+                    /api.js                 // Обертка для запросов к API
+                    /auth.js                // Функции для работы с аутентификацией
+                index.js                    // Точка входа
+        /profile-microfrontend
+            /src
+                /components
+                    /EditAvaterPopup.js     // Компонент для редактирования аватара
+                    /EditProfilePopup.js    // Компонент для редактирования профиля
+                    /PopupWithForm.js       // Компонент всплывающих формы
+                /styles
+                    /popup.css              // Стили для компонента всплывающих форм
+                /utils
+                    /api.js                 // Обертка для запросов к API
+                    /auth.js                // Функции для работы с аутентификацией
+                index.js                    // Точка входа
+        /cards-microfrontend
+            /src
+                /components
+                    /Card.js                // Компонент изображения
+                    /AddPlacePopup.js       // Компонент для добавления изображения
+                    /ImagePopup.js          // Компонент для просмотра изображения
+                    /PopupWithForm.js       // Компонент всплывающих формы
+                /styles
+                    /popup.css              // Стили для компонента всплывающих форм
+                    /card.css               // Стили для компонента изображения
+                /utils
+                    /api.js                 // Обертка для запросов к API
+                    /auth.js                // Функции для работы с аутентификацией
+                index.js                    // Точка входа
+
